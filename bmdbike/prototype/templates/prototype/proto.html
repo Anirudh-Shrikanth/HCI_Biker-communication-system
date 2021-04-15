@@ -1,0 +1,86 @@
+<html>
+    {% load static %}
+    <button type="button" onclick="emergency()" style="background-color:red;border-radius:20px;position: absolute;left: 660px; top: 110px;">caution</button>
+    <button type="button" onclick="record()" style="background-color:yellow;border-radius:20px;position: absolute;left: 660px; top: 285px;">chat</button>
+    <button type="button" onclick="volume_up()" style="position: absolute;left: 390px; top: 840px;">up</button>
+    <button type="button" onclick="volume_down()" style="position: absolute;left: 470px; top: 865px;">down</button>
+    <img src="{% static 'Bike_High.png' %}">
+    <ul id = "record_result" style="position: absolute;left: 1000px; top: 110px;" >
+    </ul>
+    <script>
+        var volume=5
+        function volume_up() {
+            if(volume<10)
+            {
+                volume++;
+                alert("volume = "+volume)
+            }
+            else{
+                alert("volume = "+volume+" MAXIMUM")
+            }
+        }
+        function volume_down() {
+            if(volume>0)
+            {
+                volume--;
+                alert("volume = "+volume)
+            }
+            else{
+                alert("volume = "+volume+" MINIMUM")
+            }
+        }
+        function emergency()
+        {
+            alert("Emergency Message Sent!!")
+        }
+        function record()
+        {
+            var xhttp = new XMLHttpRequest()
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == XMLHttpRequest.DONE && this.status == 200) {
+                    let data = JSON.parse(this.responseText)
+                }
+            }
+
+            var url = 'record/';
+            xhttp.open("POST", window.location.href + url, true);
+            xhttp.setRequestHeader("Content-type", "application/json;charset=UTF-8");
+            // xhttp.setRequestHeader("Authorization", "Bearer " + getCookie("token"));
+            // xhttp.setRequestHeader("X-CSRFToken", getCookie("csrftoken"));
+            xhttp.send();
+        }
+        function getlist()
+        {
+            var xhttp = new XMLHttpRequest()
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == XMLHttpRequest.DONE && this.status == 200) {
+                    let data = JSON.parse(this.responseText)
+                    console.log(data)
+                    
+                    result_p = document.getElementById("record_result")
+                    convo = ""
+                    for (i = 0; i < data['list'].length; i++) {
+                        if(data['list'][i]["user"]==data["user"])
+                        {
+                            convo +=  ('<li>' + "me : "+data['list'][i]["data"] +"\n"  +'</li>') 
+                        } 
+                        else
+                        {
+                            convo +=  ('<li>'+data['list'][i]["user"] + " : "+data['list'][i]["data"] +"\n"  +'</li>')
+                        }             
+                    }
+                    result_p.innerHTML = convo
+                }
+            }
+
+            var url = 'record/';
+            xhttp.open("GET", window.location.href + url, true);
+            xhttp.setRequestHeader("Content-type", "application/json;charset=UTF-8");
+            // xhttp.setRequestHeader("Authorization", "Bearer " + getCookie("token"));
+            // xhttp.setRequestHeader("X-CSRFToken", getCookie("csrftoken"));
+            xhttp.send();
+        }
+        var myVar = setInterval(getlist, 5000);
+        getlist()
+    </script>
+</html>

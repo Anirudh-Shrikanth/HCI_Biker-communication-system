@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2021-04-13T20:46:43.815Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36" etag="h0m4qm1f-1L4BjfcGAxN" version="14.6.0" type="google">
+  <diagram id="IurER5ZLDopgpNnYuRK8" name="Page-1">
+    <mxGraphModel dx="2249" dy="805" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="pdRLI2m4cdZ6NSD54m93-1" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;rotation=90;fillColor=#647687;strokeColor=#314354;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="205" y="-177" width="152.75" height="920.25" as="geometry" />
+        </mxCell>
+        <mxCell id="pdRLI2m4cdZ6NSD54m93-2" value="" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;rotation=90;fillColor=#eeeeee;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="298" y="170" width="405" height="202" as="geometry" />
+        </mxCell>
+        <mxCell id="pdRLI2m4cdZ6NSD54m93-4" value="" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#e51400;strokeColor=#B20000;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="430" y="108" width="138" height="138" as="geometry" />
+        </mxCell>
+        <mxCell id="pdRLI2m4cdZ6NSD54m93-6" value="" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#e3c800;strokeColor=#B09500;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="434" y="288" width="130" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="pdRLI2m4cdZ6NSD54m93-13" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn3.iconfinder.com/data/icons/space-254/64/Helmet-128.png;sketch=0;" vertex="1" parent="1">
+          <mxGeometry x="81" y="534" width="518" height="518" as="geometry" />
+        </mxCell>
+        <mxCell id="pdRLI2m4cdZ6NSD54m93-16" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/gradient-ui-1/512/minus-128.png;sketch=0;" vertex="1" parent="1">
+          <mxGeometry x="271" y="847" width="73.75" height="73.75" as="geometry" />
+        </mxCell>
+        <mxCell id="pdRLI2m4cdZ6NSD54m93-19" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/gradient-ui-1/512/plus-128.png;sketch=0;" vertex="1" parent="1">
+          <mxGeometry x="189" y="819" width="77" height="77" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
